@@ -2,3 +2,6 @@ venv/
 __pycache__/
 .ipynb_checkpoints/
 *.pyc
+*.exe
+Monitoring_dan_Logging/data/
+Monitoring_dan_Logging/prometheus.exe

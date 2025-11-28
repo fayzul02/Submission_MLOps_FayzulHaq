@@ -1,0 +1,8 @@
+Link Folder Workflow CI:
+https://github.com/fayzul02/Submission_MLOps_FayzulHaq/tree/master/Workflow-CI
+
+Link GitHub Actions:
+https://github.com/fayzul02/Submission_MLOps_FayzulHaq/actions
+
+Link Docker Hub Image:
+https://hub.docker.com/repository/docker/ijul09/submission-mlops
