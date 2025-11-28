@@ -4,8 +4,7 @@ from sklearn.preprocessing import LabelEncoder, StandardScaler
 import os
 
 def preprocess_data():
-    # 1. Tentukan Path (Menggunakan Relative Path agar aman di GitHub Actions)
-    # Asumsi script dijalankan dari root repository
+    # 1. Tentukan Path 
     base_dir = os.path.dirname(os.path.abspath(__file__))
     input_path = os.path.join(base_dir, '../data_raw/WA_Fn-UseC_-Telco-Customer-Churn.csv')
     output_path = os.path.join(base_dir, 'data_clean.csv')
@@ -14,14 +13,12 @@ def preprocess_data():
     
     # Cek apakah file ada
     if not os.path.exists(input_path):
-        # Fallback jika dijalankan dari root folder
         input_path = 'Eksperimen_SML_NamaAnda/data_raw/WA_Fn-UseC_-Telco-Customer-Churn.csv'
         output_path = 'Eksperimen_SML_NamaAnda/preprocessing/data_clean.csv'
 
     df = pd.read_csv(input_path)
     
     # 2. Cleaning
-    # Fix TotalCharges
     df['TotalCharges'] = pd.to_numeric(df['TotalCharges'], errors='coerce')
     df = df.dropna()
     # Drop ID
