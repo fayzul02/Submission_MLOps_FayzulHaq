@@ -1,0 +1,36 @@
+name: Data Preprocessing Pipeline
+
+on:
+  push:
+    paths:
+      - 'Eksperimen_SML_NamaAnda/data_raw/**'
+      - 'Eksperimen_SML_NamaAnda/preprocessing/**'
+
+jobs:
+  preprocess:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+      
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.9'
+        
+    - name: Install dependencies
+      run: |
+        pip install -r Eksperimen_SML_NamaAnda/preprocessing/requirements.txt
+        
+    - name: Run Preprocessing Script
+      run: |
+        python Eksperimen_SML_NamaAnda/preprocessing/automate_NamaAnda.py
+        
+    - name: Commit and Push Clean Data
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        git add Eksperimen_SML_NamaAnda/preprocessing/data_clean.csv
+        # Commit hanya jika ada perubahan
+        git diff --quiet && git diff --staged --quiet || (git commit -m "Auto-generated clean dataset" && git push)
