@@ -1,0 +1,15 @@
+artifact_uri: file:///D:/Project/Submission_MLOps_FayzulHaq/mlruns/215798766901924089/ca82386875fa42ca8372d098973105c9/artifacts
+end_time: 1764392370562
+entry_point_name: ''
+experiment_id: '215798766901924089'
+lifecycle_stage: active
+run_id: ca82386875fa42ca8372d098973105c9
+run_name: abundant-seal-309
+run_uuid: ca82386875fa42ca8372d098973105c9
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1764392365108
+status: 3
+tags: []
+user_id: hp

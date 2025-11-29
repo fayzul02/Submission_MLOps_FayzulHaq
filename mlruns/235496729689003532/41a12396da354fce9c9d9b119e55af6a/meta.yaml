@@ -1,0 +1,15 @@
+artifact_uri: file:///D:/Project/Submission_MLOps_FayzulHaq/mlruns/235496729689003532/41a12396da354fce9c9d9b119e55af6a/artifacts
+end_time: 1764392204425
+entry_point_name: ''
+experiment_id: '235496729689003532'
+lifecycle_stage: active
+run_id: 41a12396da354fce9c9d9b119e55af6a
+run_name: resilient-wren-884
+run_uuid: 41a12396da354fce9c9d9b119e55af6a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1764392194539
+status: 3
+tags: []
+user_id: hp

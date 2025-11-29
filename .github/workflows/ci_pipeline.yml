@@ -27,11 +27,10 @@ jobs:
       run: |
         pip install mlflow==2.11.3 pandas scikit-learn numpy
 
-    - name: Run Training (Generate Model)
+    - name: Run Training with MLflow Command
       run: |
         cd Workflow-CI/MLProject
-        python modelling.py
-        # Cek apakah run_id.txt terbentuk
+        mlflow run . --env-manager=local
         cat run_id.txt
 
     - name: Login to Docker Hub

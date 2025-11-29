@@ -29,7 +29,7 @@ acc = accuracy_score(y_test, y_pred)
 print(f"Accuracy: {acc}")
 
 # Logging ke MLflow
-mlflow.set_experiment("Telco_Churn_CI_Pipeline")
+# mlflow.set_experiment("Telco_Churn_CI_Pipeline")
 
 with mlflow.start_run() as run:
     mlflow.log_metric("accuracy", acc)

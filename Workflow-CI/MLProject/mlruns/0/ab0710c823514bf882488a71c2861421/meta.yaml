@@ -1,0 +1,15 @@
+artifact_uri: file:///D:/Project/Submission_MLOps_FayzulHaq/Workflow-CI/MLProject/mlruns/0/ab0710c823514bf882488a71c2861421/artifacts
+end_time: 1764394605743
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: ab0710c823514bf882488a71c2861421
+run_name: stately-flea-467
+run_uuid: ab0710c823514bf882488a71c2861421
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1764394602000
+status: 4
+tags: []
+user_id: hp
